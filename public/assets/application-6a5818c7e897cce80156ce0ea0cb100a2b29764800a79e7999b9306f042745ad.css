@@ -1,0 +1,54 @@
+/* line 5, /Users/joebuhlig/Codebase/now/app/assets/stylesheets/now.scss */
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 9, /Users/joebuhlig/Codebase/now/app/assets/stylesheets/now.scss */
+#navigation {
+  position: fixed;
+  z-index: 1000;
+}
+
+/* line 13, /Users/joebuhlig/Codebase/now/app/assets/stylesheets/now.scss */
+#section_wrapper {
+  display: table;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  z-index: 100;
+}
+
+/* line 21, /Users/joebuhlig/Codebase/now/app/assets/stylesheets/now.scss */
+.section {
+  max-width: 600px;
+  margin: 0px auto;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 28, /Users/joebuhlig/Codebase/now/app/assets/stylesheets/now.scss */
+#credit {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Domain verifications -->
+	<meta name="p:domain_verify" content="92caa79b9e843a42436dface55a7595f">
+	<!-- Page info -->
+	<title>Now - Joe Buhlig</title>
+	<meta name="description" content="Everything I'm up to right now. This is what I'm currently developing, reading, and exploring.">
+	<!-- Fonts -->
+	<link href="http://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet" type="text/css">
+	<!-- Favicons and icons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/images/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/images/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/images/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/images/favicon-160x160.png" sizes="160x160">
+	<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+	<!-- Open Graph tags -->
+	<meta content="Now - Joe Buhlig" property="og:site_name">
+	<meta property="og:locale" content="en_US" />
+	<meta content="Now - Joe Buhlig" property="og:title">
+	<meta content="website" property="og:type">
+	<meta content="Everything I'm up to right now. This is what I'm currently developing, reading, and exploring." property="og:description">
+	<meta content="http://now.joebuhlig.com" property="og:url">
+	<meta content="" property="og:image">
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@joebuhlig">
+	<meta name="twitter:creator" content="@joebuhlig">
+	<meta name="twitter:title" content="Now - Joe Buhlig">
+	<meta name="twitter:url" content="http://now.joebuhlig.com">
+	<meta name="twitter:description" content="Everything I'm up to right now. This is what I'm currently developing, reading, and exploring.">
+	<meta name="twitter:image:src" content="">
+	<!-- Stylesheets -->
+	<%= stylesheet_link_tag    'application', 'data-turbolinks-track' => true %>
+	<!-- Javascriptl -->
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<!-- Miscellaneous -->
+	<%= csrf_meta_tags %>
+</head>
+  <body>
+	<%= yield %>
+  	<% if Rails.env.production? %>
+	<!-- Piwik -->
+	<script type="text/javascript">
+	  var _paq = _paq || [];
+	  _paq.push(["setDomains", ["*.now.joebuhlig.com"]]);
+	  _paq.push(['trackPageView']);
+	  _paq.push(['enableLinkTracking']);
+	  (function() {
+	    var u="//joebuhlig.piwikpro.com/";
+	    _paq.push(['setTrackerUrl', u+'piwik.php']);
+	    _paq.push(['setSiteId', 9]);
+	    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+	    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	  })();
+	</script>
+	<noscript><p><img src="//joebuhlig.piwikpro.com/piwik.php?idsite=9" style="border:0;" alt="" /></p></noscript>
+	<!-- End Piwik Code -->
+	<% end %>
+  </body>
+</html>
