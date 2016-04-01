@@ -23,7 +23,7 @@ function updatePage(page){
 	});
 	request.success(function(data){
 		window.history.pushState({}, "Now - Joe Buhlig", page);
-		$(".section")
+		$(".section-content")
 			.css('opacity', 0)
 			.html(data)
 			.animate(

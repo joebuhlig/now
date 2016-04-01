@@ -45,7 +45,7 @@ a {
 	font-family: Cinzel, Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	position: fixed;
-	margin: 0px calc(50% - 292px);
+	margin: 0px calc(50% - 276px);
 	text-align: center;
 	z-index: 1000;
 	ul {
@@ -59,25 +59,37 @@ a {
 		margin: 8px 15px;
 	}
 
-	@media(max-width:604px){
+	@media(max-width:552px){
 		margin: 0px;
-		width: 100%;
 	}
 }
 #section_wrapper{
-	display: table;
-	position: fixed;
+	position: absolute;
     height: 100%;
     width: 100%;
     top: 0px;
     z-index: 100;
 }
 .section{
-    max-width: 600px;
-    margin: 0px auto;
-    display: table-cell;
     text-align: center;
 	vertical-align: middle;
+	margin-top: 100px;
+}
+.section-content{
+	max-width: 600px;
+	margin: 0px auto;
+	padding: 10px;
+	text-align: left;
+	.title{
+		font-family: Cinzel, Helvetica, Arial, sans-serif;
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+	.description{
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 24px;
+	}
 }
 #footer{
 	position: fixed;
