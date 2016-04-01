@@ -4,13 +4,16 @@
 
 html, body{
 	background-color: #222222;
-	color: #BBBBBB;
+	color: #DDDDDD;
 	font-family: Helvetica, Arial, sans-serif;
-	font-weight: 300;
 	margin: 0px;
 	padding: 0px;
 	height: 100%;
 	width: 100%;
+}
+a {
+	color: #DDDDDD;
+	text-decoration: underline;
 }
 #bg-video{
 	height: 100%;
@@ -26,6 +29,9 @@ html, body{
 		    height: 100%;
 		    width: auto;
 		}
+		@media(max-width: 1000px){
+			margin-left: -175px;
+		}
 	}
 }
 #video-overlay{
@@ -35,32 +41,28 @@ html, body{
     background-color: #000000;
     opacity: 0.6;
 }
-#last_updated {
-	color: #777777;
-    margin: 10px;
-    position: fixed;
-
-    #date{
-    	color: #BBBBBB;
-    }
-}
 #navigation{
+	font-family: Cinzel, Helvetica, Arial, sans-serif;
 	position: fixed;
-	margin: 10px calc(50% - 269px);
-	width: 538px;
+	margin: 0px calc(50% - 269px);
+	max-width: 538px;
+	text-align: center;
 	z-index: 1000;
-
 	ul {
 		list-style: none;
 		margin: 0px;
 		padding: 0px;
 	}
-
 	li {
 		cursor: pointer;
 		display: inline-block;
-		font-family: Cinzel, Helvetica, Arial, sans-serif;
-		margin: 0px 15px;
+		margin: 8px 15px;
+	}
+
+	@media(max-width:558px){
+		margin: 0px;
+		max-width: 100%;
+		width: 100%;
 	}
 }
 #section_wrapper{
@@ -78,13 +80,24 @@ html, body{
     text-align: center;
 	vertical-align: middle;
 }
-#credit{
+#footer{
 	position: fixed;
 	bottom: 10px;
 	width: 100%;
 	text-align: center;
-	font-size: 12px;
 	z-index: 200;
+	#last_updated {
+		font-family: Cinzel, Helvetica, Arial, sans-serif;
+	    margin: 10px;
+	    text-align: center;
+	    font-weight: 300;
+	    #date{
+	    	color: #DDDDDD;
+	    }
+	}
+	#credit{
+		font-size: 12px;
+	}
 }
 video::-webkit-media-controls {
     display:none !important;
