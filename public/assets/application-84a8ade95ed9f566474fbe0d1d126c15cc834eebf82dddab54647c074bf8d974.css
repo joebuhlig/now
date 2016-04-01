@@ -1,0 +1,88 @@
+/* line 5, /Users/joebuhlig/Codebase/now/app/assets/stylesheets/now.scss */
+html, body {
+  background-color: #222222;
+  color: #BBBBBB;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 15, /Users/joebuhlig/Codebase/now/app/assets/stylesheets/now.scss */
+#last_updated {
+  color: #777777;
+  margin: 10px;
+  position: fixed;
+}
+/* line 20, /Users/joebuhlig/Codebase/now/app/assets/stylesheets/now.scss */
+#last_updated #date {
+  color: #BBBBBB;
+}
+
+/* line 24, /Users/joebuhlig/Codebase/now/app/assets/stylesheets/now.scss */
+#navigation {
+  position: fixed;
+  margin: 10px calc(50% - 269px);
+  width: 538px;
+  z-index: 1000;
+}
+/* line 30, /Users/joebuhlig/Codebase/now/app/assets/stylesheets/now.scss */
+#navigation ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+/* line 36, /Users/joebuhlig/Codebase/now/app/assets/stylesheets/now.scss */
+#navigation li {
+  cursor: pointer;
+  display: inline-block;
+  font-family: Cinzel, Helvetica, Arial, sans-serif;
+  margin: 0px 15px;
+}
+
+/* line 43, /Users/joebuhlig/Codebase/now/app/assets/stylesheets/now.scss */
+#section_wrapper {
+  display: table;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  z-index: 100;
+}
+
+/* line 51, /Users/joebuhlig/Codebase/now/app/assets/stylesheets/now.scss */
+.section {
+  max-width: 600px;
+  margin: 0px auto;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 58, /Users/joebuhlig/Codebase/now/app/assets/stylesheets/now.scss */
+#credit {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  z-index: 200;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
