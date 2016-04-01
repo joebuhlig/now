@@ -21,6 +21,11 @@ html, body{
 
 	video {
 		width: 100%;
+
+		@media(max-width: 1200px){
+		    height: 100%;
+		    width: auto;
+		}
 	}
 }
 #video-overlay{
