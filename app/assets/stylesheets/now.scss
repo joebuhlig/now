@@ -43,9 +43,9 @@ a {
 }
 #navigation{
 	font-family: Cinzel, Helvetica, Arial, sans-serif;
+	font-size: 18px;
 	position: fixed;
-	margin: 0px calc(50% - 269px);
-	max-width: 538px;
+	margin: 0px calc(50% - 292px);
 	text-align: center;
 	z-index: 1000;
 	ul {
@@ -59,9 +59,8 @@ a {
 		margin: 8px 15px;
 	}
 
-	@media(max-width:558px){
+	@media(max-width:604px){
 		margin: 0px;
-		max-width: 100%;
 		width: 100%;
 	}
 }
