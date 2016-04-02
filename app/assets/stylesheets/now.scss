@@ -46,7 +46,7 @@ a {
 #navigation{
 	font-family: Cinzel, Helvetica, Arial, sans-serif;
 	font-size: 18px;
-	position: fixed;
+	position: absolute;
 	margin: 0px calc(50% - 276px);
 	text-align: center;
 	z-index: 1000;
@@ -94,11 +94,10 @@ a {
 	}
 }
 #footer{
-	position: fixed;
-	bottom: 10px;
 	width: 100%;
 	text-align: center;
 	z-index: 200;
+	margin-bottom:15px;
 	#last_updated {
 		font-family: Cinzel, Helvetica, Arial, sans-serif;
 	    margin: 10px;
