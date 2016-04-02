@@ -17,7 +17,6 @@ a {
 }
 #bg-video{
 	height: 100%;
-	width: 100%;
 	overflow: hidden;
 	position: fixed;
 	z-index: 0;
@@ -29,9 +28,12 @@ a {
 		    height: 100%;
 		    width: auto;
 		}
-		@media(max-width: 1000px){
-			margin-left: -175px;
-		}
+	}
+	#mobile_fallback{
+		display: none;
+	}
+	@media(max-width: 1000px){
+		margin-left: -175px;
 	}
 }
 #video-overlay{

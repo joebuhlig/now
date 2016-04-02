@@ -1,4 +1,8 @@
 $(document).ready(function(){
+	if (navigator.userAgent.match(/Mobile|webOS|Nexus 7/)){
+		$("#bg-video video").hide();
+		$("#bg-video #mobile_fallback").show();
+	}
 	$("#hello_link").click(function(){
 		updatePage("hello");
 	});
