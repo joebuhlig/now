@@ -18,6 +18,10 @@ $(document).ready(function(){
 	$("#history_link").click(function(){
 		updatePage("history");
 	});
+	$('.menu-icon').click(function(event){
+		event.preventDefault();
+		$('#navigation').toggleClass('open');
+	});
 });
 
 function updatePage(page){
@@ -26,6 +30,7 @@ function updatePage(page){
 	    url: "/get/" + page
 	});
 	request.success(function(data){
+		$('#navigation').toggleClass('open');
 		window.history.pushState({}, "Now - Joe Buhlig", page);
 		$(".section-content")
 			.css('opacity', 0)
@@ -34,5 +39,10 @@ function updatePage(page){
 				{ opacity: 1 },
 				{ queue: false, duration: 'slow' }
 			);
+		try {
+			_paq.push(['trackPageView']);
+		}
+		catch(err){
+		}
 	});
 }
