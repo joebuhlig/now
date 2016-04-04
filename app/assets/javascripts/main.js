@@ -39,7 +39,7 @@ function updatePage(page){
 }
 
 function setDOM(){
-	$("body .link, .menu-icon").unbind("click");
+	$(".link, .menu-icon, #section_wrapper").unbind("click");
 	$(".hello.link").click(function(event){
 		event.preventDefault();
 		updatePage("hello");
