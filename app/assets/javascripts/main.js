@@ -5,8 +5,8 @@ $(document).ready(function(){
 	}
 	$(window).scroll(function(){
 		console.log($(window).scrollTop());
-		if ($(window).scrollTop() > 50){
-			$(".menu-icon").fadeOut();
+		if ($(window).scrollTop() > 50 && !$("#navigation #menu").is(":visible")){
+			$(".menu-icon").not(".open").fadeOut();
 		}
 		else{
 			$(".menu-icon").fadeIn();	
