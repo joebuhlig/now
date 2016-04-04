@@ -1,8 +1,17 @@
 $(document).ready(function(){
 	if (navigator.userAgent.match(/Mobile|webOS|Nexus 7/)){
 		$("#bg-video video").remove();
-		$("#bg-video #mobile_fallback").show();
+		$("body").addClass("mobile");
 	}
+	$(window).scroll(function(){
+		console.log($(window).scrollTop());
+		if ($(window).scrollTop() > 50){
+			$(".menu-icon").fadeOut();
+		}
+		else{
+			$(".menu-icon").fadeIn();	
+		}
+	})
 	setDOM();
 });
 
@@ -47,9 +56,9 @@ function setDOM(){
 		event.preventDefault();
 		updatePage("development");
 	});
-	$(".history.link").click(function(event){
+	$(".work.link").click(function(event){
 		event.preventDefault();
-		updatePage("history");
+		updatePage("work");
 	});
 	$('.menu-icon').click(function(event){
 		event.preventDefault();

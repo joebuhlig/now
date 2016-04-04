@@ -1,6 +1,6 @@
 class NowController < ApplicationController
 	def index
-		pages = ['hello', 'time', 'reading', 'development', 'history', 'error']
+		pages = ['hello', 'time', 'reading', 'development', 'work', 'error']
 		@page = params["page"] || "hello"
 		unless pages.include? @page
 			redirect_to "/error"

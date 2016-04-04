@@ -29,12 +29,20 @@ a {
 		    width: auto;
 		}
 	}
-	#mobile_fallback{
+	#fallback{
 		display: none;
 	}
 	@media(max-width: 1000px){
 		margin-left: -175px;
 	}
+}
+.mobile{
+	 #bg-video #fallback{
+	 	display: inherit;
+	 }
+	 .section{
+	 	margin-top: 50px;
+	 }
 }
 #video-overlay{
     position: fixed;
@@ -46,7 +54,7 @@ a {
 #navigation{
 	font-family: Cinzel, Helvetica, Arial, sans-serif;
 	font-size: 18px;
-	position: absolute;
+	position: fixed;
 	z-index: 1000;
 	right: 0px;
 	#menu{
