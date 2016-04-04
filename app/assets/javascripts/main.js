@@ -39,7 +39,7 @@ function updatePage(page){
 }
 
 function setDOM(){
-	$(".link, .menu-icon").unbind("click");
+	$("body .link, .menu-icon").unbind("click");
 	$(".hello.link").click(function(event){
 		event.preventDefault();
 		updatePage("hello");
@@ -67,4 +67,7 @@ function setDOM(){
 	$("#menu .link").click(function(){
 		$('#navigation').toggleClass('open');
 	});
+	$("#section_wrapper").click(function(){
+		$('#navigation').removeClass('open');
+	})
 }
