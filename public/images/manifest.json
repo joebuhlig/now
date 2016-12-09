@@ -1,0 +1,12 @@
+{
+	"name": "joebuhlig.com",
+	"icons": [
+		{
+			"src": "\/android-chrome-192x192.png?v=XBrNAby3Gx",
+			"sizes": "192x192",
+			"type": "image\/png"
+		}
+	],
+	"theme_color": "#333333",
+	"display": "standalone"
+}
