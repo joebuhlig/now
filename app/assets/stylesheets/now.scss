@@ -110,11 +110,11 @@ a {
 	}
 }
 .mobile{
-	 #bg-video #fallback{
-	 	display: inherit;
+	 .poster.hidden{
+	 	visibility: visible;
 	 }
-	 .section{
-	 	margin-top: 50px;
+	 .section-content{
+	 	background-color: transparent;
 	 }
 }
 #video-overlay{

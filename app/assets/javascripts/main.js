@@ -1,4 +1,7 @@
 $(document).ready(function(){
+	if (navigator.userAgent.match(/Mobile|webOS|Nexus 7/)){
+		$("body").addClass("mobile");
+	}
 	scaleVideoContainer();
 
     initBannerVideoSize('.video-container .poster img');
